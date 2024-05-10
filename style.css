@@ -29,7 +29,7 @@ body {
      text-align: center;
        color: #f5f5dc; /* Color del texto */
        font-size: 50px;
-       margin-top: 200px;
+       margin-top: 100px;
       
    
    }
@@ -63,7 +63,7 @@ body {
     border-radius: 30px; /* Bordes redondeados */
     overflow: hidden; /* Oculta los contenidos que se desbordan */
     /* box-shadow: 30px 30px 30px rgb(241, 180, 180); */
-    box-shadow: 0 0 90px rgb(241, 180, 180);
+    box-shadow: 30px 30px 50px rgb(241, 180, 180);
 
  /* Sombra suave */
   }
