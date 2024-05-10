@@ -1,0 +1,231 @@
+body {
+    margin:0;
+    background: #080842;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 100%; /* El elemento nunca será más ancho que su contenedor */
+  height: auto;
+
+
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 5px;
+   }
+   svg.rose {
+     display: block;
+     width:600px;
+     padding-top: 10em;
+     margin-top: -100px;
+   }
+   
+   h1 {
+    
+     
+     text-align: center;
+       color: #f5f5dc; /* Color del texto */
+       font-size: 36px;
+       margin-top: 100px;
+   
+   
+   }
+
+   .texto p {
+    text-align: center;
+    color: #ffffff; /* Color del texto */
+    font-size: 36px;
+    margin-bottom: 40px;
+   }
+
+   .texto .segundo {
+    margin-bottom: 100px;
+   }
+
+   /* img {
+    max-width: 300px; 
+  height: auto;
+  width: 100%;
+  border-radius: 15px;
+   }
+
+   img:hover {
+    box-shadow: ;
+   } */
+
+   .card {
+    width: 100%;
+    max-width: 400px; /* Ajusta el ancho máximo según tus necesidades */
+    margin: 0 auto;
+    border-radius: 30px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta los contenidos que se desbordan */
+    /* box-shadow: 30px 30px 30px rgb(241, 180, 180); */
+    box-shadow: 0 0 90px rgb(241, 180, 180);
+
+ /* Sombra suave */
+  }
+  
+  .card img {
+    width: 100%; /* Ajusta la imagen al ancho del contenedor */
+    max-width: 400px;
+    height: auto; /* Ajusta automáticamente la altura */
+    display: block; /* Elimina el espacio debajo de la imagen */
+    border-radius: 15px; /* Bordes redondeados */
+    transition: transform 0.3s ease-in-out; /* Agrega una transición suave */
+  }
+  
+  .card img {
+    transform: scale(1.05); /* Escala ligeramente la imagen para resaltarla */
+  }
+  
+   
+   @keyframes rose-animation {
+     50% {
+       transform: scale(1);
+       opacity: 1;
+     }
+     100%{
+          transform: scale(1);
+       opacity: 1;
+     }
+   }
+   
+   .cls-3,.cls-4,.cls-5,.cls-6,.cls-7,.cls-8,.cls-9,.cls-10,.cls-11,.cls-12,.cls-13,.cls-14,.cls-15,.cls-16,.cls-17{
+     transform: scale(0);
+     transform-origin: center center;
+     opacity: 0;
+      animation: rose-animation 2s ease infinite 0.1s alternate;
+   }
+   .cls-6,.cls-7,.cls-8,.cls-9,.cls-10,.cls-11,.cls-12,.cls-13,.cls-14,.cls-15,.cls-16,.cls-17{
+     transform: scale(0);
+     transform-origin: center center;
+     opacity: 0;
+      animation: rose-animation 2s ease infinite 0.34s alternate;
+   }
+   .cls-9,.cls-10,.cls-11,.cls-12,.cls-13,.cls-14,.cls-15,.cls-16,.cls-17{
+     transform: scale(0);
+     transform-origin: center center;
+     opacity: 0;
+      animation: rose-animation 2s ease infinite 0.5s alternate;
+   }
+   cls-12,.cls-13,.cls-14,.cls-15,.cls-16,.cls-17{
+     transform: scale(0);
+     transform-origin: center center;
+     opacity: 0;
+      animation: rose-animation 2s ease infinite 0.2s alternate;
+   }
+   .boingInUp {
+     -webkit-animation-name: boingInUp;
+             animation-name: boingInUp;
+   }
+   @-webkit-keyframes boingInUp {
+     0% {
+       opacity: 0;
+       -webkit-transform-origin: 50% 0%;
+               transform-origin: 50% 0%;
+       -webkit-transform: perspective(800px) rotateX(-90deg);
+               transform: perspective(800px) rotateX(-90deg);
+     }
+     
+     50% {
+       opacity: 1;
+       -webkit-transform-origin: 50% 0%;
+               transform-origin: 50% 0%;
+       -webkit-transform: perspective(800px) rotateX(50deg);
+               transform: perspective(800px) rotateX(50deg);
+     }
+   
+     100% {
+       opacity: 1;
+       -webkit-transform-origin: 50% 0%;
+               transform-origin: 50% 0%;
+       -webkit-transform: perspective(800px) rotateX(0deg);
+               transform: perspective(800px) rotateX(0deg);
+     }
+   }
+   #hojas{
+     animation: boingInUp 2s ease infinite alternate  ;
+   }
+   @keyframes boingInUp {
+     0% {
+       opacity: 0;
+       -webkit-transform-origin: 50% 0%;
+               transform-origin: 50% 0%;
+       -webkit-transform: perspective(800px) rotateX(-90deg);
+               transform: perspective(800px) rotateX(-90deg);
+     }
+     
+     50% {
+       opacity: 1;
+       -webkit-transform-origin: 50% 0%;
+               transform-origin: 50% 0%;
+       -webkit-transform: perspective(800px) rotateX(50deg);
+               transform: perspective(800px) rotateX(50deg);
+     }
+   
+     100% {
+       opacity: 1;
+       -webkit-transform-origin: 50% 0%;
+               transform-origin: 50% 0%;
+       -webkit-transform: perspective(800px) rotateX(0deg);
+               transform: perspective(800px) rotateX(0deg);
+     }
+   }
+   .puffIn {
+     -webkit-animation-name: puffIn;
+             animation-name: puffIn;
+   }
+   @-webkit-keyframes puffIn {
+     0% {
+       opacity: 0;
+       -webkit-transform-origin: 50% 50%;
+               transform-origin: 50% 50%;
+       -webkit-transform: scale(2,2);
+               transform: scale(2,2);
+       -webkit-filter: blur(2px);
+               filter: blur(2px);
+     }
+   
+     100% {
+       opacity: 1;
+       -webkit-transform-origin: 50% 50%;
+               transform-origin: 50% 50%;
+       -webkit-transform: scale(1,1);
+               transform: scale(1,1);
+       -webkit-filter: blur(0px);
+               filter: blur(0px);
+     }
+   }
+   @keyframes puffIn {
+     0% {
+       opacity: 0;
+       -webkit-transform-origin: 50% 50%;
+               transform-origin: 50% 50%;
+       -webkit-transform: scale(2,2);
+               transform: scale(2,2);
+       -webkit-filter: blur(2px);
+               filter: blur(2px);
+     }
+     50%{
+       opacity: 0.3;
+     }
+   
+     100% {
+       opacity: 1;
+       -webkit-transform-origin: 50% 50%;
+               transform-origin: 50% 50%;
+       -webkit-transform: scale(1,1);
+               transform: scale(1,1);
+       -webkit-filter: blur(0px);
+               filter: blur(0px);
+     }
+   }
+   #tallos{
+     animation: puffIn 2s infinite ease alternate;
+   }
+   #sombra_1{
+     visibility:hidden;
+   }
